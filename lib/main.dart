@@ -13,28 +13,55 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.lightBlue,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                margin: EdgeInsets.all(20),
-                height: 100,
-                width: 100,
-                color: Colors.white,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                  ),
+                ],
               ),
               Container(
-                margin: EdgeInsets.all(20),
-                height: 100,
+                alignment: Alignment.center,
+                height: 150,
                 width: 200,
-                color: Colors.blue,
+                color: Colors.black,
+                child: Text(
+                  'Challenge from class #15',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                height: 100,
-                width: 300,
-                color: Colors.lime,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                  ),
+                ],
               ),
             ],
           ),
