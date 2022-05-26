@@ -28,8 +28,79 @@ class MyApp extends StatelessWidget {
               Text(
                 'Fernando Silva',
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 45,
                   color: Colors.white,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'DEVELOPER',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.teal.shade100,
+                  fontFamily: 'Source Sans Pro',
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(
+                  10,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                      size: 25,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '+55 84 98790-1740',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(
+                  10,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.mail,
+                      color: Colors.teal,
+                      size: 25,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'fernnlcs@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
