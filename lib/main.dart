@@ -13,55 +13,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.white,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-              Container(
-                alignment: Alignment.center,
-                height: 150,
-                width: 200,
-                color: Colors.black,
-                child: Text(
-                  'Challenge from class #15',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: NetworkImage(
+                  'https://scontent.fmvf2-1.fna.fbcdn.net/v/t39.30808-6/245650672_4460569600690594_8631427972597269579_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=5S1jgOJJ7B8AX8VRjQ7&tn=L06h7McDm2ajx4x_&_nc_ht=scontent.fmvf2-1.fna&oh=00_AT-YAz59gJyTEnaTBajI7Varm6ww0v_QPkbwxPZDNSHpIw&oe=6294A802https://scontent.fmvf2-1.fna.fbcdn.net/v/t39.30808-6/245650672_4460569600690594_8631427972597269579_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=5S1jgOJJ7B8AX8VRjQ7&tn=L06h7McDm2ajx4x_&_nc_ht=scontent.fmvf2-1.fna&oh=00_AT-YAz59gJyTEnaTBajI7Varm6ww0v_QPkbwxPZDNSHpIw&oe=6294A802',
                 ),
+                backgroundColor: Colors.teal,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.white,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.white,
-                  ),
-                ],
+              Text(
+                'Fernando Silva',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
